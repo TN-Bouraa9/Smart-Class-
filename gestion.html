@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edusense</title>
+    <link rel="stylesheet" href="gestion.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="Logo_ESPRIT_Ariana.jpg" alt="Esprit"></div>
+        <div class="user-info">Admin</div>
+    </header>
+
+    <div class="container">
+        <h1>Gestion des Salles & Capteurs</h1>
+        <p class="subtitle">Configuration du système • Administrateur</p>
+
+        <!-- 4 CARTES – CONTENU TOUJOURS LÀ -->
+        <div class="cards">
+            <div class="card" onclick="openModal('salles')">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+                    </div>
+                    <h3>Gestion des Salles</h3>
+                    <p>Ajouter, modifier ou supprimer des salles</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('capteurs')">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                    </div>
+                    <h3>Gestion des Capteurs</h3>
+                    <p>Gérer les capteurs du système</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('assoc')">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <h3>Associer Capteur à Salle</h3>
+                    <p>Lier un capteur à une salle</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('seuils')">
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-4v-2h4v2zm0-4h-4V7h4v6z"/></svg>
+                    </div>
+                    <h3>Seuils personnalisés</h3>
+                    <p>Définir les alertes température/CO₂</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="modal-title">Titre</span>
+                <span class="close" onclick="closeModal()">X</span>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="gestion.js"></script>
+</body>
+</html>
