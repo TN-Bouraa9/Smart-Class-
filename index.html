@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Smart Classe - Alertes & Recommandations</title>
+ <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+ <div class="container">
+  <!-- Header Section -->
+  <header>
+   <div class="logo-container">
+    <img src="assets/images/esprit-logo.png" alt="ESPRIT Logo" class="logo">
+    <h1>Smart Classe</h1>
+   </div>
+   <div class="notification-badge">
+    <img src="assets/images/warning-icon.png" alt="Warning" class="warning-icon">
+    <span class="badge">🔴</span>
+   </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+   <!-- Current Status Section -->
+   <section class="status-section">
+    <h2>État Actuel</h2>
+    <div class="status-cards">
+     <div class="card temperature">
+      <i class="fas fa-thermometer-half"></i>
+      <h3>Température</h3>
+      <p class="value">24°C</p>
+      <p class="status alert">Seuil dépassé!</p>
+     </div>
+     <div class="card noise">
+      <i class="fas fa-volume-up"></i>
+      <h3>Niveau Sonore</h3>
+      <p class="value">75 dB</p>
+      <p class="status warning">Niveau élevé</p>
+     </div>
+    </div>
+   </section>
+
+   <!-- Alerts Section -->
+   <section class="alerts-section">
+    <h2>Alertes Récentes</h2>
+    <div class="alerts-list">
+     <div class="alert-item high">
+      <div class="alert-icon">
+       <img src="assets/images/warning-triangle.png" alt="Warning" class="alert-warning-icon">
+      </div>
+      <div class="alert-content">
+       <h4>Température Élevée</h4>
+       <p>La température a dépassé 26°C</p>
+       <span class="timestamp">Il y a 5 minutes</span>
+      </div>
+     </div>
+     <div class="alert-item medium">
+      <div class="alert-icon">
+       <i class="fas fa-volume-up"></i>
+      </div>
+      <div class="alert-content">
+       <h4>Niveau Sonore Élevé</h4>
+       <p>Le niveau sonore dépasse 70 dB</p>
+       <span class="timestamp">Il y a 15 minutes</span>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- Recommendations Section -->
+   <section class="recommendations-section">
+    <h2>Recommandations</h2>
+    <div class="recommendations-list">
+     <div class="recommendation-item">
+      <i class="fas fa-wind"></i>
+      <div class="recommendation-content">
+       <h4>Ventilation</h4>
+       <p>Ouvrez les fenêtres pendant 10 minutes pour réduire la température</p>
+      </div>
+     </div>
+     <div class="recommendation-item">
+      <i class="fas fa-volume-down"></i>
+      <div class="recommendation-content">
+       <h4>Niveau Sonore</h4>
+       <p>Essayez de réduire le volume des discussions de groupe</p>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+   <p>&copy; 2025 Smart Classe - Système de Surveillance</p>
+  </footer>
+ </div>
+</body>
+
+</html>
