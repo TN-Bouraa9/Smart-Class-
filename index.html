@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esprit - Tableau de bord enseignant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Section En-tête -->
+    <header class="en-tete">
+        <div class="logo-esprit">
+            <img src="images/logo-esprit.jpg" alt="Logo ESPRIT" class="logo-image">
+            <span class="logo-edusense-wrapper">
+                <img src="images/edusense.png" alt="eduSense" class="logo-edusense">
+                <p class="sous-titre">Tableau de bord enseignant</p>
+            </span>
+        </div>
+        <!-- Carte Info Utilisateur -->
+        <div class="carte-utilisateur">
+            <img src="images/professeur.jpg" alt="Photo du professeur" class="photo-utilisateur">
+            <p>Bonjour M. Rayen — Vous êtes actuellement en salle <strong>H407</strong> avec la classe <strong>2A10</strong></p>
+        </div>
+        <div class="date-heure-wrapper">
+            <p class="date">samedi 8 novembre 2025</p>
+            <span class="heure">14:41:58</span>
+        </div>
+    </header>
+
+    <!-- Grille Principale -->
+    <!-- Carte Température -->
+    <div class="carte carte-temperatures">
+        <i class="fas fa-thermometer-half icone-carte"></i>
+        <h3>Température</h3>
+        <div class="thermometre">
+            <div class="remplissage-thermometre"></div>
+            <div class="point-thermometre"></div>
+        </div>
+        <div class="valeur-temperatures">22.5°C</div>
+        <div class="statut-temperatures">Idéal </div>
+    </div>
+
+    <!-- Carte Humidité -->
+    <div class="carte carte-humidite">
+        <i class="fas fa-tint icone-carte"></i>
+        <h3>Humidité</h3>
+        <div class="badge-statut optimal">Optimal</div>
+        <div class="valeur-mesure">55 %</div>
+    </div>
+
+    <!-- Carte CO2 -->
+    <div class="carte carte-co2">
+        <i class="fas fa-wind icone-carte"></i>
+        <h3>CO₂</h3>
+        <div class="badge-statut modere">Modéré</div>
+        <div class="valeur-mesure">850 ppm</div>
+    </div>
+
+    <!-- Carte Bruit -->
+    <div class="carte carte-bruit">
+        <i class="fas fa-volume-up icone-carte"></i>
+        <h3>Bruit</h3>
+        <div class="badge-statut normal">Normal</div>
+        <div class="valeur-mesure">58 dB</div>
+    </div>
+
+    <!-- Carte Luminosité -->
+    <div class="carte carte-luminosite">
+        <i class="fas fa-sun icone-carte"></i>
+        <h3>Luminosité</h3>
+        <div class="badge-statut optimal">Idéal</div>
+        <div class="valeur-mesure">520 lux</div>
+    </div>
+
+    <!-- Carte Ambiance de classe -->
+    <div class="carte carte-ambiance">
+        <h3>Ambiance de classe</h3>
+        <p class="texte-ambiance">Ambiance calme et saine </p>
+        <p class="sous-titre-ambiance">Conditions optimales pour l'enseignement</p>
+    </div>
+
+    <!-- Carte Chronologie de la séance -->
+    <div class="carte carte-chronologie">
+        <h3>Chronologie de la séance</h3>
+        <div class="affichage-heure">
+            <div class="boite-heure ecoule">
+                <div class="icone-temps">
+                    <i class="fas fa-clock horloge-rouge"></i>
+                </div>
+                <p class="etiquette-heure">Temps écoulé</p>
+                <p class="valeur-heure rouge">401 min</p>
+            </div>
+            <div class="boite-heure restant">
+                <div class="icone-temps">
+                    <i class="fas fa-clock horloge-vert"></i>
+                </div>
+                <p class="etiquette-heure">Temps restant</p>
+                <p class="valeur-heure vert">0 min</p>
+            </div>
+        </div>
+        <div class="barre-progression">
+            <div class="remplissage-progression"></div>
+        </div>
+        <div class="etiquettes-progression">
+            <span>08:00</span>
+            <span>100%</span>
+            <span>09:00</span>
+        </div>
+    </div>
+
+    <!-- Carte Résumé rapide -->
+    <div class="carte carte-resume">
+        <h3>Résumé rapide</h3>
+        <div class="indice-confort">
+            <p class="etiquette-indice">Indice de confort global</p>
+            <div class="barre-indice">
+                <div class="remplissage-barre-indice"></div>
+            </div>
+            <div class="etiquette-barre-indice">
+                <span class="texte-indice">Excellent</span>
+                <span class="valeur-indice">90%</span>
+            </div>
+        </div>
+        <div class="analyse">
+            <p class="etiquette-analyse">
+                <i class="fas fa-file-alt icone-analyse"></i>
+                Analyse
+            </p>
+            <p class="texte-analyse">Température agréable. L'air est légèrement chargé en CO2. Niveau sonore acceptable. Éclairage optimal.</p>
+        </div>
+        <div class="citation">
+            <i class="fas fa-quote-left icone-citation"></i>
+            <p class="texte-citation">Chaque élève est unique et précieux</p>
+        </div>
+    </div>
+
+    <!-- Bouton Actualiser -->
+    <button class="bouton-actualiser">
+        <i class="fas fa-sync-alt icone-actualiser"></i>
+        Actualiser les données
+    </button>
+</body>
+</html>
+
