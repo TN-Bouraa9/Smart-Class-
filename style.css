@@ -63,8 +63,8 @@ header {
 }
 
 .logo {
- height: 60px;
- width: 60px;
+ height: 80px;
+ width: auto;
  object-fit: contain;
  transition: transform 0.3s ease, filter 0.3s ease;
  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
@@ -77,6 +77,12 @@ header {
 .logo:hover {
  transform: scale(1.02);
  filter: drop-shadow(0 2px 4px rgba(230, 70, 50, 0.15));
+}
+
+@media (max-width: 768px) {
+ .logo {
+  height: 60px;
+ }
 }
 
 /* Cards Section */
@@ -313,9 +319,20 @@ header h1 {
 }
 
 .notification-badge .warning-icon {
- width: 24px;
- height: 24px;
+ width: 120px;
+ height: auto;
  object-fit: contain;
+ transition: transform 0.3s ease;
+}
+
+.notification-badge:hover .warning-icon {
+ transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+ .notification-badge .warning-icon {
+  width: 80px;
+ }
 }
 
 .badge {
